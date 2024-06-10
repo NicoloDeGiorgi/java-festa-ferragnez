@@ -18,21 +18,42 @@ public class CheckGuest {
 		   
 		   boolean invitato = true;
 		   
-		   for (int i = 0; i < invitatiFerragnez.length; i++) {
+		   for (int i = 0; i < invitatiFerragnez.length && !invitato; i++) {
 			   if (name.equals(invitatiFerragnez[i])) {
-				   invitato = true;
+				   invitato = false;
 			   }
 		   }
 		   
-		   if (invitato) {
+		   if (!invitato) {
 			   System.out.println("Benvenuto/a, si prenda un drink e si goda la festa");
 		   }
 		   else 
 			   System.out.println("Lei non è invitato, torni a casa o chiamo la sicurezza");
 		   
 		   scanner.close();
-		 
+		
+		  /*int i = 0;
+		  
+		  while (i < invitatiFerragnez.length && invitato == false) {
+			  if (name.equals(invitatiFerragnez[i])) {
+				  invitato = true;
+			  }
+			  i++;
+			  
+		  }
+		  if (!invitato) {
+			   System.out.println("Benvenuto/a, si prenda un drink e si goda la festa");
+		}
+		else 
+			   System.out.println("Lei non è invitato, torni a casa o chiamo la sicurezza");
+		  scanner.close();*/
 	}
+	
 	
 
 }
+
+
+
+
+
