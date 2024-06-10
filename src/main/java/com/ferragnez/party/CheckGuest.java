@@ -9,14 +9,14 @@ public class CheckGuest {
 		
 		String [] invitatiFerragnez = {"Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic"};
 		
-		Scanner scanneer = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 		   System.out.print("Mi dica il suo nome gentilmente:");
 		   
-		   String name = scan.nextLine();
+		   String name = scanner.nextLine();
 		   
 		   
-		   boolean invitato = false;
+		   boolean invitato = true;
 		   
 		   for (int i = 0; i < invitatiFerragnez.length; i++) {
 			   if (name.equals(invitatiFerragnez[i])) {
@@ -30,7 +30,7 @@ public class CheckGuest {
 		   else 
 			   System.out.println("Lei non è invitato, torni a casa o chiamo la sicurezza");
 		   
-		   scan.close();
+		   scanner.close();
 		 
 	}
 	
