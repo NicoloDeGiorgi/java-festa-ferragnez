@@ -11,28 +11,29 @@ public class CheckGuest {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		   System.out.print("Mi dica il suo nome gentilmente:");
+		   System.out.print("Mi dica il suo nome gentilmente: ");
 		   
 		   String name = scanner.nextLine();
 		   
 		   
-		   boolean invitato = true;
+		   boolean invitato = false;
 		   
-		   for (int i = 0; i < invitatiFerragnez.length && !invitato; i++) {
+		   /*for (int i = 0; i < invitatiFerragnez.length && !invitato; i++) {
 			   if (name.equals(invitatiFerragnez[i])) {
-				   invitato = false;
+				   invitato = true;
+				  
 			   }
 		   }
 		   
-		   if (!invitato) {
+		   if (invitato) {
 			   System.out.println("Benvenuto/a, si prenda un drink e si goda la festa");
 		   }
 		   else 
 			   System.out.println("Lei non è invitato, torni a casa o chiamo la sicurezza");
 		   
-		   scanner.close();
+		   scanner.close();*/
 		
-		  /*int i = 0;
+		  int i = 0;
 		  
 		  while (i < invitatiFerragnez.length && invitato == false) {
 			  if (name.equals(invitatiFerragnez[i])) {
@@ -41,12 +42,12 @@ public class CheckGuest {
 			  i++;
 			  
 		  }
-		  if (!invitato) {
+		  if (invitato) {
 			   System.out.println("Benvenuto/a, si prenda un drink e si goda la festa");
 		}
 		else 
 			   System.out.println("Lei non è invitato, torni a casa o chiamo la sicurezza");
-		  scanner.close();*/
+		  scanner.close();
 	}
 	
 	
